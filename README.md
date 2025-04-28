@@ -1,11 +1,11 @@
 # Avalanche Ski Gear Company - Dataset Documentation
 
 ## Overview
-This repository contains datasets for Avalanche, a hypothetical premium ski gear company specializing in high-performance winter sports equipment. The datasets provide insights into product catalog, customer reviews, order history, and shipping logistics.
+This repository contains datasets for `Avalanche Inc`, a hypothetical premium ski gear company specializing in high-performance winter sports equipment. The datasets provide insights into product catalog, customer reviews, order history, and shipping logistics.
 
 ## Datasets
 
-### 1. Product Catalog (`product-catalog-with-category-label.csv`)
+### 1. Product Catalog (`product-catalog-with-category-label`)
 - **Description**: Comprehensive catalog of Avalanche's premium ski equipment and apparel
 - **Fields**:
   - `name`: Product name
@@ -24,7 +24,7 @@ This repository contains datasets for Avalanche, a hypothetical premium ski gear
   - Alpine Base Layer
   - Avalanche Safety Pack
 
-### 2. Customer Reviews (`customer_reviews.csv`)
+### 2. Customer Reviews (`customer_reviews`)
 - **Description**: Customer feedback and sentiment analysis for Avalanche products
 - **Fields**:
   - `PRODUCT`: Product name
@@ -36,7 +36,7 @@ This repository contains datasets for Avalanche, a hypothetical premium ski gear
   - Includes detailed testing feedback from various skiing conditions
   - Sentiment scores help track customer satisfaction
 
-### 3. Order History (`order-history.csv`)
+### 3. Order History (`order-history`)
 - **Description**: Transaction records of customer purchases
 - **Fields**:
   - `Order ID`: Unique order identifier
@@ -51,7 +51,7 @@ This repository contains datasets for Avalanche, a hypothetical premium ski gear
   - Orders from October 15, 2023 to November 7, 2023
   - Includes 25 unique orders
 
-### 4. Shipping Logs (`shipping-logs.csv`)
+### 4. Shipping Logs (`shipping-logs`)
 - **Description**: Tracking information for order deliveries
 - **Fields**:
   - `order_id`: Order identifier
@@ -70,12 +70,12 @@ This repository contains datasets for Avalanche, a hypothetical premium ski gear
   - SummitLine Express
 
 ## Data Relationships
-- Order History links to Shipping Logs via `Order ID`
-- Product Catalog provides detailed information about products referenced in Order History
-- Customer Reviews provide feedback on products listed in the Product Catalog
+- `Order History` links to Shipping Logs via `Order ID`
+- `Product Catalog` provides detailed information about products referenced in `Order History`
+- `Customer Reviews` provide feedback on products listed in the `Product Catalog`
 
 ## Data Quality
-- All datasets are in CSV format
+- All datasets are in `CSV` and `JSON` format
 - Consistent date formatting (YYYY-MM-DD)
 - Standardized currency format (USD)
 - Complete product descriptions and specifications
